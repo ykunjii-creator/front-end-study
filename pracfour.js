@@ -29,7 +29,7 @@ switch (problem) {
         // ### 3. 2에서 만든 배열의 [2]에 ‘빵’ 추가하는 코드 작성
 
         // - splice 사용해주세요
-        const foods3 = ["치즈","요구르트","우유,아이스크림"];
+        const foods3 = ["치즈","요구르트","우유","아이스크림"];
         foods3.splice(4,0,prompt("빵을 입력하세요"));
         alert(foods3);
     break;}
@@ -100,9 +100,9 @@ switch (problem) {
 
         const starstair = Number(prompt("줄 수를 입력하세요"));
 
-        for (let i = 0; i<=starstair; i++) {
+        for (let i = 1; i<=starstair; i++) {
             let star = "";
-            for (let j = 0; j<=i; j++) {
+            for (let j = 1; j<=i; j++) {
                 star += "*";
             }
 
@@ -157,7 +157,7 @@ switch (problem) {
                 street: "강남구 역삼동",
             },
             getStudentInfo: function() {
-                return `$(this.name)은(는) ${this.age}세이고, ${this.address.city}에 살고 있습니다`;
+                return `${this.name}은(는) ${this.age}세이고, ${this.address.city}에 살고 있습니다`;
             },
             addSubject: function(subject) {
                 this.subjects.push(subject);
